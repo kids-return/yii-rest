@@ -8,11 +8,11 @@
 namespace yii\rest;
 
 use yii\helpers\Yii;
-use yii\web\filters\auth\CompositeAuth;
-use yii\web\filters\ContentNegotiator;
-use yii\web\filters\RateLimiter;
-use yii\web\filters\VerbFilter;
-use yii\web\Response;
+use yii\rest\filters\auth\CompositeAuth;
+use yii\rest\filters\ContentNegotiator;
+use yii\rest\filters\RateLimiter;
+use yii\rest\filters\VerbFilter;
+use yii\rest\Response;
 use yii\base\Action;
 
 /**
@@ -31,7 +31,7 @@ use yii\base\Action;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 1.0
  */
-class Controller extends \yii\web\Controller
+class Controller extends \yii\base\Controller
 {
     /**
      * @var string|array the configuration for creating the serializer that formats the response data.
